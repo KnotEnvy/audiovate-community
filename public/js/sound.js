@@ -170,6 +170,19 @@ function playStop() {
           case 'starburst':
             Starburst.drawStarburst(bufferLength, x, barWidth, barHeight, dataArray);
             break;
+
+          case 'Squares':
+             Squares.drawSquares(bufferLength, x, barWidth, barHeight, dataArray);
+             break;
+          
+          case 'FullScreenBars':
+            FullScreenBars.drawFullScreenBars(bufferLength, x, barWidth, barHeight, dataArray);
+            break;
+
+          case 'Shapes':
+            Shapes.drawShapes(bufferLength, x, barWidth, barHeight, dataArray);
+            break;
+
           default:
             BlackBars.drawGreyBars(bufferLength, x, barWidth, barHeight, dataArray);
             BlackBars.drawBlackBars(bufferLength, x, barWidth, barHeight, dataArray);

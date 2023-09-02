@@ -38,6 +38,10 @@ html {
   margin-top: 3em;
   height: 125px;
 }
+.controlButton :hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
 
 .controlButton a,
 .controlButton a:visited {
@@ -46,9 +50,16 @@ html {
 
 .controlButton a:hover, 
 .controlButton a:active {
-  border: 3px solid aquamarine;
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+  border: 4px solid aquamarine;
 }
 
+.controlButton a {
+  background: linear-gradient(to bottom, #fff, #ddd);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
 /* .controlElement:hover,
 .controlElement:active {
   border: 3px solid crimson;
@@ -80,6 +91,14 @@ body {
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
+body {
+  background: linear-gradient(
+      rgba(255,255,255,0.5), 
+      rgba(255,255,255,0.5)
+    ),
+    url('/images/bg.jpg') no-repeat center center; 
+}
+
 
 /* Containers */
   .d-block {
@@ -172,9 +191,7 @@ scrollbar-width: none;  /* Firefox */
     border: none;
   }
 
-  #audioControls {
-    
-  }
+
 
   #audioContainer {
     bottom: 4em;
